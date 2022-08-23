@@ -45,7 +45,7 @@
   width: 28px;
   height: 28px;
   margin: -3px 5px 0 0;
-  background: url("./img/icon-weight-white.webp") no-repeat;
+  background: url("./img/icon-weight-white.png") no-repeat;
   background-size: contain;
   vertical-align: middle;
 }
@@ -55,7 +55,7 @@
   width: 15px;
   height: 15px;
   margin: -3px 5px 0 0;
-  background: url("./img/icon-plus-white.webp") no-repeat;
+  background: url("./img/icon-plus-white.png") no-repeat;
   background-size: contain;
   vertical-align: middle;
 }
