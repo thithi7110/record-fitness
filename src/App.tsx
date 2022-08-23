@@ -1,26 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { HashRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Home from './Components/Home';
+import Record from './Components/Record';
+import RecordCount from './Components/RecordCount';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Router>
+        <div>
+          <Link to={"/Home"}>Home</Link>
+          <Link to={"/Record"}>今日の記録</Link>
+        </div>
+        <Switch>
+          <Route exact path={"/Home"} component={Home}></Route>
+          <Route exact path={"/Record"} component={Record}></Route>
+          <Route exact path={"/RecordCount"} component={RecordCount}></Route>
+        </Switch>
+      </Router>
+    </>);
 }
 
 export default App;
